@@ -1,0 +1,23 @@
+{
+  "name": "Lycan Agent Pass #418",
+  "description": "Lycan Agent Pass \u2014 a free NFT pass on BNB Chain, mintable only by holders of a Binance Agent ID (name.ai). One pass per wallet, 1,000 total. Free mint, gas only. Holding this pass promises no returns, no income, and no future value.",
+  "image": "https://lycann666.github.io/lycan-agent-pass/assets/pass.svg",
+  "attributes": [
+    {
+      "trait_type": "Agent ID Gated",
+      "value": "Yes"
+    },
+    {
+      "trait_type": "Collection",
+      "value": "Lycan Agent Pass"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "BNB Chain"
+    },
+    {
+      "trait_type": "Mint Price",
+      "value": "Free (gas only)"
+    }
+  ]
+}
