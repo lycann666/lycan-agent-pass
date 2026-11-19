@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#131a26"/>
+      <stop offset="1" stop-color="#0a0d12"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5c542"/>
+      <stop offset="1" stop-color="#d9930d"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5c542" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#f5c542" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <!-- faint diagonal texture -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="-100" y1="300" x2="1100" y2="100"/>
+    <line x1="-100" y1="500" x2="1100" y2="300"/>
+    <line x1="-100" y1="700" x2="1100" y2="500"/>
+    <line x1="-100" y1="900" x2="1100" y2="700"/>
+  </g>
+
+  <!-- outer ring -->
+  <circle cx="500" cy="420" r="260" fill="none" stroke="url(#ring)" stroke-width="4"/>
+  <circle cx="500" cy="420" r="228" fill="none" stroke="#f5c542" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4 10"/>
+
+  <!-- shield / crest -->
+  <path d="M500 210 L668 288 V430 C668 545 590 622 500 660 C410 622 332 545 332 430 V288 Z"
+        fill="#10151d" stroke="url(#gold)" stroke-width="6" stroke-linejoin="round"/>
+  <!-- wolf-ear mark (abstract) -->
+  <path d="M410 470 L470 350 L500 405 L530 350 L590 470 L530 430 L500 460 L470 430 Z"
+        fill="url(#gold)"/>
+  <!-- star -->
+  <path d="M500 480 L512 512 L546 512 L519 532 L529 564 L500 544 L471 564 L481 532 L454 512 L488 512 Z"
+        fill="#f5c542"/>
+
+  <!-- wordmark -->
+  <text x="500" y="790" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="72" font-weight="bold" letter-spacing="8" fill="#f2f2f2">LYCAN</text>
+  <text x="500" y="858" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="44" font-weight="bold" letter-spacing="14" fill="url(#gold)">AGENT PASS</text>
+  <text x="500" y="920" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="22" letter-spacing="6" fill="#8b949e">AGENT ID GATED &#183; BNB CHAIN</text>
+</svg>

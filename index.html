@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lycan Agent Pass — Free NFT for Agent ID Holders</title>
+  <meta name="description" content="Lycan Agent Pass is a free NFT pass on BNB Chain, mintable only by holders of a Binance Agent ID. Free mint — gas only.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <main class="card">
+    <img class="badge" src="assets/pass.svg" alt="Lycan Agent Pass badge">
+    <h1>LYCAN AGENT PASS</h1>
+    <p class="tagline">A free NFT pass on BNB Chain, for Agent ID holders only.</p>
+
+    <p class="explain">
+      If you hold a Binance Agent ID (<code>name.ai</code>), you can mint one Lycan Agent Pass
+      for free — you only pay the network gas. One pass per wallet, 1,000 passes total.
+      The contract checks your Agent ID on-chain before minting.
+    </p>
+
+    <div class="supply">
+      <span>Minted: <strong id="minted">—</strong> / <strong id="maxSupply">1,000</strong></span>
+      <span id="supplyNote"></span>
+    </div>
+
+    <button id="connectBtn" class="btn primary">Connect Wallet</button>
+    <p id="walletLine" class="muted hidden">Connected: <code id="walletAddr"></code></p>
+
+    <div id="statusBox" class="status hidden"></div>
+
+    <button id="mintBtn" class="btn gold hidden" disabled>Mint my free pass</button>
+    <p id="txLine" class="muted hidden"></p>
+
+    <p class="note">
+      Honest note: minting is free except gas. Holding a Lycan Agent Pass promises
+      no returns, no income, and no future value — it is a collectible pass for
+      Agent ID holders. Always review the transaction in your wallet before confirming.
+      This site never asks for your seed phrase or private key, never stores your
+      session, and never signs anything on your behalf.
+    </p>
+
+    <p class="links">
+      <a id="contractLink" href="#" target="_blank" rel="noopener">View contract on BscScan</a>
+      &nbsp;·&nbsp;
+      <a href="https://x.com/69lycan" target="_blank" rel="noopener">@69lycan on X</a>
+    </p>
+    <p class="fineprint">Built for the Binance Agent ID Hackathon. Not affiliated with or endorsed by Binance.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
